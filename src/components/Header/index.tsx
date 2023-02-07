@@ -7,15 +7,16 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-      <Styled.Container>
-        <Styled.Title></Styled.Title>
+    <Styled.Container>
+      <Styled.Title>Ações rápidas</Styled.Title>
       <Styled.ContainerSub>
         <Styled.ContainerButton>
+          Contratar Motorista
         </Styled.ContainerButton>
         <Styled.ContainerButton>
         </Styled.ContainerButton>
       </Styled.ContainerSub>
-     </Styled.Container>
+    </Styled.Container>
   );
 };
 

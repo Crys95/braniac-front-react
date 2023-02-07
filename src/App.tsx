@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 import RouterPage from './routes/route';
+import { store, persistor } from './store';
 
-function App() {
-  return (
-    <div className="App">
-     <RouterPage />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+          <RouterPage />
+        </PersistGate>
+      </Provider>
+    );
+  }
 }
 
 export default App;
