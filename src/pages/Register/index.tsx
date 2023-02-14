@@ -87,7 +87,7 @@ const Register: React.FC = () => {
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
           />
-          <Styled.Icon onClick={eyeFunction}>{eye === 'password' ? (<FaEyeSlash />) : (<FaEye />)}</Styled.Icon>
+          <Styled.Icon onClick={eyeFunction}>{eye === 'password' ? (<FaEye />) : (<FaEyeSlash />)}</Styled.Icon>
         </Styled.DivInput>
 
         <Styled.DivInput>
@@ -99,7 +99,7 @@ const Register: React.FC = () => {
             value={senhacon}
             onChange={(e) => setSenhacon(e.target.value)}
           />
-          <Styled.Icon onClick={eyeFunction2}>{eyeConf === 'password' ? (<FaEyeSlash />) : (<FaEye />)}</Styled.Icon>
+          <Styled.Icon onClick={eyeFunction2}>{eyeConf === 'password' ? (<FaEye />) : (<FaEyeSlash />)}</Styled.Icon>
         </Styled.DivInput>
 
         <Styled.DivBotton>
