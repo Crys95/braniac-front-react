@@ -1,41 +1,22 @@
-import React from 'react';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import {
-  faTriangleExclamation,
-  faCheck,
-} from '@fortawesome/free-solid-svg-icons';
-import * as Styled from './styles';
+import toast from 'react-hot-toast';
 
-type TypeToast = 'info' | 'success' | 'warning' | 'error';
+type typeToast = 'SUCCESS' | 'ERROR' | 'LOADING' | 'WARNING';
 
-const CustomToast = (title: string, type: TypeToast, text: string) => (
-  <>
-    <Styled.Container>
-      <Styled.Icon
-        icon={type === 'error' ? faTriangleExclamation : faCheck}
-        fontSize={22}
-      />
-      <Styled.Title>{title}</Styled.Title>
-    </Styled.Container>
-    <Styled.Text>{text}</Styled.Text>
-  </>
-);
-
-/**
- * Função para exibir o toast
- * @param title Titulo do toast
- * @param text Texto do toast
- * @param type tipo do toast success | error
- */
-export const ShowToast = (title: string, text: string, type: TypeToast) => {
-  toast(CustomToast(title, type, text), {
-    icon: false,
-    type,
-    theme: 'colored',
-    position: 'bottom-right',
-    hideProgressBar: true,
-    closeButton: false,
-    autoClose: 3000,
-  });
+export const ShowToast = (type: typeToast, text: string) => {
+  if (type === 'SUCCESS') {
+    toast.success(text, { position: 'bottom-right' });
+  }
+  if (type === 'ERROR') {
+    toast.error(text, { position: 'bottom-right' });
+  }
+  if (type === 'LOADING') {
+    toast.loading(text, { position: 'bottom-right' });
+  }
+  if (type === 'WARNING') {
+    toast.error(text, {
+      position: 'bottom-right',
+      duration: 4000,
+      icon: <i className="bi bi-exclamation-triangle-fill text-warning fs-2" />,
+    });
+  }
 };

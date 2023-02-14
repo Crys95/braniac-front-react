@@ -21,12 +21,12 @@ const store = createSlice({
       state.loading = true;
     });
     builder.addCase(Signup.fulfilled, (state, action) => {
-      state.message = action.payload.message;
       state.loading = false;
+      ShowToast('SUCCESS', 'Registro efetuado com sucesso');
     });
     builder.addCase(Signup.rejected, (state, action) => {
       state.loading = false;
-      ShowToast('Alerta', 'Falha ao carregar informações', 'error');
+      ShowToast('ERROR', 'Falha ao registar');
     });
 
     //Login
@@ -38,7 +38,7 @@ const store = createSlice({
     });
     builder.addCase(signin.rejected, (state, action) => {
       state.loading = false;
-      ShowToast('Alerta', 'Falha ao carregar informações', 'error');
+      ShowToast('ERROR', 'Falha ao logar');
     });
 
   },

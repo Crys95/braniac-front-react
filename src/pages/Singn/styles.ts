@@ -36,5 +36,13 @@ display: flex;
 justify-content: space-between;
 `
 
+export const Icon = styled.div`
+  cursor: pointer;
+  margin-left: 265px;
+  padding-top: 21px;
+  position: relative;
+  position: absolute;
+`;
+
 
 

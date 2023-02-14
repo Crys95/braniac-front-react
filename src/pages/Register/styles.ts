@@ -29,6 +29,13 @@ export const DivInput = styled.div`
    display: flex;
    justify-content: center;
 `
+export const Icon = styled.div`
+  cursor: pointer;
+  margin-left: 265px;
+  padding-top: 21px;
+  position: relative;
+  position: absolute;
+`;
 
 export const DivBotton = styled.div`
 width: 300px;
