@@ -26,7 +26,7 @@ const store = createSlice({
     });
     builder.addCase(Signup.rejected, (state, action) => {
       state.loading = false;
-      ShowToast('ERROR', 'Falha ao registar');
+      ShowToast('ERROR', 'Falha ao registrar');
     });
 
     //Login
