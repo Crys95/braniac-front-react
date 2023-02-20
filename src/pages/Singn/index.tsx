@@ -27,7 +27,9 @@ const Sign: React.FC = () => {
     {
       email: emails,
       password: senha,
-    }));
+    }),
+    navigate('/Home'),
+    );
 
   return (
     <Styled.Container>

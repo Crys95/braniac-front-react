@@ -6,7 +6,7 @@ position: fixed;
 text-align: center;
 bottom: 0;
 width: 100%;
-height: 3rem;
+height: 40px;
 `;
 
 export const Info = styled.div`
