@@ -4,6 +4,7 @@ import { Signup, signin } from './thunk.store';
 import { ShowToast } from '../../../components/toast';
 
 const initialState: singResponse = {
+  name: '',
   error: '',
   message: '',
   success: false,
@@ -13,7 +14,11 @@ const initialState: singResponse = {
 const store = createSlice({
   initialState,
   name: 'signin',
-  reducers: {},
+  reducers: {
+    ReducerSing: (state, action) => {
+      state.name = action.payload.individual.name;
+    }
+  },
   extraReducers: (builder) => {
 
     //Register
@@ -34,6 +39,8 @@ const store = createSlice({
       state.loading = true;
     });
     builder.addCase(signin.fulfilled, (state, action) => {
+      state.name = action.payload.individual.name;
+      console.log(state.name);
       state.loading = false;
     });
     builder.addCase(signin.rejected, (state, action) => {
@@ -43,4 +50,5 @@ const store = createSlice({
 
   },
 });
+export const { ReducerSing } = store.actions;
 export default store.reducer;

@@ -15,10 +15,19 @@ export interface RequestSignin {
   password: string;
 }
 
+export interface InfoSing {
+  name: string,
+
+}
 //Response
 export interface singResponse {
+  name: string,
   error: string;
   message: string;
   loading: boolean;
   success: boolean;
+}
+
+export interface ResponseSing {
+  data: InfoSing;
 }

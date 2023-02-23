@@ -6,10 +6,12 @@ import { RequestSignup, RequestSignin } from './types.store';
 //Login
 export const signin = createAsyncThunk(
   '/signin',
-  async (request: RequestSignin, { rejectWithValue }) => {
+  async (request: RequestSignin, { rejectWithValue, dispatch }) => {
     try {
       const response = await api.post('/auth/signin', request, {
       });
+
+      console.log(response);
       return response.data;
     } catch (err) {
       const error = err as AxiosError;

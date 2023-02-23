@@ -5,8 +5,6 @@ import * as Styled from './styles';
 const Navegador: React.FC = () => {
     const navigate = useNavigate();
 
-
-
     return (
             <Styled.ContainerNavegar>
                     <Styled.Navegar>
