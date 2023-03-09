@@ -2,11 +2,11 @@
 /* eslint-disable quotes */
 /* eslint-disable import/no-cycle */
 import { AnyAction, combineReducers } from 'redux';
-import SignReducer from './login/index.store';
+import SignReducer from './Auth/index.store';
 
 
 const combinedReducers = combineReducers({
-  sign: SignReducer,
+  auth: SignReducer,
 });
 
 const rootReducer = (

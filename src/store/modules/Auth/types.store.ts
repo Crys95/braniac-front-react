@@ -21,6 +21,7 @@ export interface InfoSing {
 }
 //Response
 export interface singResponse {
+  token: string;
   name: string,
   error: string;
   message: string;

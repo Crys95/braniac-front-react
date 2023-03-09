@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { signin } from '../../store/modules/login/thunk.store';
+import { signin } from '../../store/modules/Auth/thunk.store';
 import { useDispatch } from 'react-redux';
 import * as Styled from './styles';
 import { FaEyeSlash, FaEye } from 'react-icons/fa';
 import { TextField } from '@mui/material';
-import Begins from '../../components/Begins';
 import Button from '@mui/material/Button';
 
 const Sign: React.FC = () => {
@@ -28,35 +27,34 @@ const Sign: React.FC = () => {
       email: emails,
       password: senha,
     }),
-    navigate('/Home'),
-    );
+    navigate('/App/Home'),
+  );
 
   return (
     <Styled.Container>
-      <Begins />
       <Styled.ContainerRigth>
         <Styled.Title>Bem-Vindo</Styled.Title>
         <Styled.DivInput>
           <TextField
             style={{ width: 300 }}
             label="Login"
-            variant="filled"
+            variant="outlined"
             value={emails}
             onChange={(e) => setEmail(e.target.value)} />
         </Styled.DivInput>
 
         <Styled.DivInput>
           <TextField
-            style={{ width: 300 }}
+            style={{ width: 300}}
             label="Password"
-            variant="filled"
+            variant="outlined"
             type={eye}
             value={senha}
             onChange={(e) => setSenha(e.target.value)} />
-            <Styled.Icon onClick={eyeFunction}>{eye === 'password' ? (<FaEye />) : (<FaEyeSlash />)}</Styled.Icon>
+          <Styled.Icon onClick={eyeFunction}>{eye === 'password' ? (<FaEye />) : (<FaEyeSlash />)}</Styled.Icon>
         </Styled.DivInput>
         <Styled.DivBotton>
-          <Button style={{ width: 120 }} variant="outlined" onClick={() => navigate('/Register')}>Registrar</Button>
+          <Button style={{ width: 120, backgroundColor: '#FFFFFF' }} variant="outlined" onClick={() => navigate('/Register')}>Registrar</Button>
           <Button style={{ width: 120 }} variant="contained" onClick={Login}>Conectar</Button>
         </Styled.DivBotton>
       </Styled.ContainerRigth>

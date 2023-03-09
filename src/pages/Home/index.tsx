@@ -8,7 +8,7 @@ import { useAppSelector } from '../../store/hooks';
 
 const Sign: React.FC = () => {
     const navigate = useNavigate();
-    const { name } = useAppSelector((state) => state.sign);
+    const { name } = useAppSelector((state) => state.auth);
 
     return (
         <Styled.Container>

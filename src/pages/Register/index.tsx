@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import { TextField } from '@mui/material';
 import Begins from '../../components/Begins';
 import Button from '@mui/material/Button';
-import { Signup } from '../../store/modules/login/thunk.store';
+import { Signup } from '../../store/modules/Auth/thunk.store';
 import { ShowToast } from '../../components/toast';
 
 const Register: React.FC = () => {
@@ -56,7 +56,6 @@ const Register: React.FC = () => {
 
   return (
     <Styled.Container>
-      <Begins />
       <Styled.ContainerRigth>
         <Styled.Title>Registrar-se</Styled.Title>
         <Styled.DivInput>
@@ -103,7 +102,7 @@ const Register: React.FC = () => {
         </Styled.DivInput>
 
         <Styled.DivBotton>
-          <Button style={{ width: 120 }} variant="outlined" onClick={() => navigate('/')}>Voltar</Button>
+          <Button style={{ width: 120, backgroundColor: '#FFFFFF' }} variant="outlined" onClick={() => navigate('/')}>Voltar</Button>
           <Button style={{ width: 120 }} variant="contained" onClick={Register}>Registrar</Button>
         </Styled.DivBotton>
       </Styled.ContainerRigth>
