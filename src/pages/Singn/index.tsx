@@ -27,13 +27,13 @@ const Sign: React.FC = () => {
       email: emails,
       password: senha,
     }),
-    navigate('/App/Home'),
+    navigate('/Home'),
   );
 
   return (
     <Styled.Container>
       <Styled.ContainerRigth>
-        <Styled.Title>Bem-Vindo</Styled.Title>
+        <Styled.Title><Styled.Title1>Green</Styled.Title1> Sky</Styled.Title>
         <Styled.DivInput>
           <TextField
             style={{ width: 300 }}

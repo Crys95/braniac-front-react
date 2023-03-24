@@ -24,7 +24,12 @@ export const Title = styled.p`
   margin-top: -20px;
   color: #FFFFFF;
   font-size: 50px;
-
+`;
+export const Title1 = styled.span`
+  background-color: RGBA(25, 109, 0, 0.7);
+  padding: 7px;
+  border-radius: 10px;
+  color: #FFFFF;
 `;
 
 export const DivInput = styled.div`
