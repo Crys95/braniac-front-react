@@ -4,6 +4,7 @@ export interface PropsInputMask {
   italic?: number;
   required?: boolean;
   placeholder?: string;
+  type?: string;
   label?: string;
   dimension?: dimension;
   error?:string;

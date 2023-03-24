@@ -19,25 +19,31 @@ export const ContainerRegister = styled.div`
   width: 100%;
 `;
 
+
+export const ContainerCliente = styled.div`
+display: grid;
+align-items: center;
+justify-content: center;
+height: 80%;
+width: 42%;
+`;
+
+export const ContainerFuncionario = styled.div`
+display: grid;
+align-items: center;
+justify-content: center;
+height: 50%;
+width: 42%;
+`;
+
 export const Texto = styled.text`
   font-size: 20px;
   font-weight: bold;
 `;
 
-export const ContainerCliente = styled.div`
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  height: 80%;
-  width: 42%;
-`;
-
-export const ContainerFuncionario = styled.div`
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
-  width: 42%;
+export const Label = styled.label`
+  font-size: 20px;
+  font-weight: bold;
 `;
 
 
