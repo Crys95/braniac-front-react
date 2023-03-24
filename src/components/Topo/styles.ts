@@ -9,7 +9,7 @@ export const Topo = styled.div`
 
 export const Logo = styled.div`
   filter: blur(1px);
-  background-color: #1ec3ff;
+  background-color: #56ad00;
   height: 10%;
   width: 100%;
 `;

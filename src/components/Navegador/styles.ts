@@ -24,12 +24,12 @@ list-style-type: none;
 font-size: 15px;
 padding-top: 20px;
 padding-bottom: 20px;
-border-bottom: 1px solid #1ec3ff;
+border-bottom: 1px solid #56ad00;
   &:hover {
-    background-color: #1ec3ff;
+    background-color: #56ad00;
   }
   &:active {
-    background-color: #2230c9;
+    background-color: #438405;
   }
 `;
 

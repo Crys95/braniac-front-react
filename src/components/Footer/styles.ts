@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ContainerFooter = styled.footer`
-background-color: #1ec3ff;
+background-color: #56ad00;
 position: fixed;
 text-align: center;
 bottom: 0;
