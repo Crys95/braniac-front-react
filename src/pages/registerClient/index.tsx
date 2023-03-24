@@ -18,7 +18,7 @@ const RegisterClient: React.FC = () => {
             <Styled.Topo></Styled.Topo>
             <Styled.ContainerRegister>
                 <Styled.ContainerFuncionario>
-                <Styled.Texto>Funcionario</Styled.Texto>
+                    <Styled.Texto>Funcionario</Styled.Texto>
                     <Input dimension='large' placeholder='Nome'></Input>
                     <Input dimension='large' placeholder='RG ou CPF'></Input>
                     <Input dimension='large' placeholder='Endereço'></Input>
@@ -26,7 +26,7 @@ const RegisterClient: React.FC = () => {
                     <Button style={{ width: 120 }} variant="contained">Registrar</Button>
                 </Styled.ContainerFuncionario>
                 <Styled.ContainerCliente>
-                <Styled.Texto>Cliente</Styled.Texto>
+                    <Styled.Texto>Cliente</Styled.Texto>
                     <Input dimension='large' placeholder='Nome'></Input>
                     <Input dimension='large' placeholder='RG ou CPF'></Input>
                     <Input dimension='large' placeholder='Telefone'></Input>
