@@ -38,8 +38,8 @@ const Navegador: React.FC = () => {
             >
                 <Styled.ContainerNavegar  style={{padding: 0}}>
                     <Styled.Navegar>
-                        <Styled.NavegarItens>Inicio</Styled.NavegarItens>
-                        <Styled.NavegarItens>Registro</Styled.NavegarItens>
+                        <Styled.NavegarItens onClick={() => navigate('/Home')}>Inicio</Styled.NavegarItens>
+                        <Styled.NavegarItens onClick={() => navigate('/RegisterClient')}>Registro</Styled.NavegarItens>
                         <Styled.NavegarItens>Editar</Styled.NavegarItens>
                         <Styled.NavegarItens>Cliente</Styled.NavegarItens>
                         <Styled.NavegarItens>Sobre</Styled.NavegarItens>

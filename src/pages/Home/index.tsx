@@ -6,7 +6,7 @@ import Footer from '../../components/Footer';
 import Navegador from '../../components/Navegador';
 import { useAppSelector } from '../../store/hooks';
 
-const Sign: React.FC = () => {
+const Home: React.FC = () => {
     const navigate = useNavigate();
     const { name } = useAppSelector((state) => state.auth);
 
@@ -19,4 +19,4 @@ const Sign: React.FC = () => {
     );
 };
 
-export default Sign;
+export default Home;
