@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: url(https://static.vecteezy.com/ti/fotos-gratis/p1/6666567-angulo-de-elevacao-do-chao-aviao-passageiro-voar-atraves-de-edificios-com-muitas-janelas-de-vidro-reflexo-ceu-e-nuvens-no-ceu-e-um-passageiro-renderizacao-em-3d-plano-gratis-foto.jpg) no-repeat bottom center scroll;
+  background: url(http://www.myfarm.com.br/wp-content/uploads/2021/03/355756.jpg) no-repeat bottom center scroll;
   background-size: 100% 100%;
   display: flex;
   height: 100vh;
